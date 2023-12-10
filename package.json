@@ -2,7 +2,6 @@
   "name": "kstar-ksac",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ksac.kiit.ac.in/kstar",
   "dependencies": {
     "@craco/craco": "^6.4.2",
     "@testing-library/jest-dom": "^5.11.4",
