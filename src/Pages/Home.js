@@ -4,7 +4,7 @@ import Hero from '../Components/Home/Hero'
 
 function Home() {
   return (
-    <div>
+    <div className='relative'>
       <Header/>
       <Hero/>
     </div>
