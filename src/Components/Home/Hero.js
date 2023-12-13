@@ -98,7 +98,7 @@ function Hero() {
           </svg>
         </Link>
       </div>
-      <div className="absolute lg:-bottom-52 z-10" style={{top: "-67vh"}}>
+      <div className="absolute lg:-bottom-52 z-10 h-full" style={{top: "-67vh"}}>
         <img src="./assets/Home/cloud.svg" alt="cloud_main" />
       </div>
       <div className="container mx-auto">

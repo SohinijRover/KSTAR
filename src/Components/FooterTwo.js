@@ -2,9 +2,9 @@ import React from "react";
 
 function FooterTwo() {
   return (
-    <div className="w-full text-white bg-white flex flex-col md:flex-row md:justify-around justify-center items-center py-4 px-8">
+    <div className="w-full text-white bg-white flex flex-col md:flex-row md:justify-around justify-center items-center py-4 px-8 absolute">
       <div className="text-sm md:w-4/12 flex">
-        <a
+        <a  
           href="https://www.instagram.com/ksacofficial"
           target="_blank"
           rel="noreferrer"
