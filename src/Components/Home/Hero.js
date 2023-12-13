@@ -24,7 +24,7 @@ function Hero() {
           className="w-3/12 md:w-9/12 h-full"
         />
       </div>
-      <div className="w-full justify-center hidden lg:flex absolute">
+      <div className="w-full justify-center hidden lg:flex absolute top-0 z-50">
         <Link
           to="challenge"
           smooth={true}
