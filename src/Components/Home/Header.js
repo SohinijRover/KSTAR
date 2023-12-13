@@ -1,6 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Header() {
+  const calculateTimeLeft = () => {
+    const currentDate = new Date();
+    const targetDate = new Date("December 25, 2023 00:00:00");
+    const difference = targetDate - currentDate;
+
+    if (difference > 0) {
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      return {
+        days: formatTime(days),
+        hours: formatTime(hours),
+        minutes: formatTime(minutes),
+        seconds: formatTime(seconds),
+      };
+    } else {
+      // If the target date has passed
+      return {
+        days: "00",
+        hours: "00",
+        minutes: "00",
+        seconds: "00",
+      };
+    }
+  };
+
+  const formatTime = (time) => {
+    return time < 10 ? `0${time}` : `${time}`;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [timeLeft]);
   return (
     <div className="bg-gradient-to-b from-viodeep to-violight px-4 md:px-10 py-6 w-full h-screen fixed">
       <div className="w-full flex justify-between">
@@ -57,6 +100,77 @@ function Header() {
       <div className="w-full text-center mt-24 lg:mt-4">
         <p className="font-bold text-white text-2xl md:text-4xl">
           25th - 27th Dec, 2021
+        </p>
+
+        {/* TIMER */}
+        <p className="font-bold text-white text-2xl md:text-3xl mt-5 relative flex items-center justify-center gap-10 p-2">
+          <span className="relative w-20 h-20 flex flex-col justify-center items-center">
+            <span
+              className="border-2 rounded-xl absolute w-full h-full"
+              style={{ transform: "rotate(45deg)" }}
+            ></span>
+            <span
+              className="w-full border-t-2 bg-white absolute top-3/4 right-3/4"
+              style={{ transform: "rotate(-45deg)" }}
+            ></span>
+            <span
+              className="w-full border-t-2 bg-white absolute bottom-3/4 left-3/4"
+              style={{ transform: "rotate(-45deg)" }}
+            ></span>
+            <span>{timeLeft.days}</span>
+            <span className="md:text-sm">Days</span>
+          </span>
+          :
+          <span className="relative w-20 h-20 flex flex-col justify-center items-center">
+            <span
+              className="border-2 rounded-xl absolute w-full h-full"
+              style={{ transform: "rotate(45deg)" }}
+            ></span>
+            <span
+              className="w-full border-t-2 bg-white absolute top-3/4 right-3/4"
+              style={{ transform: "rotate(-45deg)" }}
+            ></span>
+            <span
+              className="w-full border-t-2 bg-white absolute bottom-3/4 left-3/4"
+              style={{ transform: "rotate(-45deg)" }}
+            ></span>
+            <span>{timeLeft.hours}</span>
+            <span className="md:text-sm">Hours</span>
+          </span>
+          :
+          <span className="relative w-20 h-20 flex flex-col justify-center items-center">
+            <span
+              className="border-2 rounded-xl absolute w-full h-full"
+              style={{ transform: "rotate(45deg)" }}
+            ></span>
+            <span
+              className="w-full border-t-2 bg-white absolute top-3/4 right-3/4"
+              style={{ transform: "rotate(-45deg)" }}
+            ></span>
+            <span
+              className="w-full border-t-2 bg-white absolute bottom-3/4 left-3/4"
+              style={{ transform: "rotate(-45deg)" }}
+            ></span>
+            <span>{timeLeft.minutes}</span>
+            <span className="md:text-sm">Min</span>
+          </span>
+          :
+          <span className="relative w-20 h-20 flex flex-col justify-center items-center">
+            <span
+              className="border-2 rounded-xl absolute w-full h-full"
+              style={{ transform: "rotate(45deg)" }}
+            ></span>
+            <span
+              className="w-full border-t-2 bg-white absolute top-3/4 right-3/4"
+              style={{ transform: "rotate(-45deg)" }}
+            ></span>
+            <span
+              className="w-full border-t-2 bg-white absolute bottom-3/4 left-3/4"
+              style={{ transform: "rotate(-45deg)" }}
+            ></span>
+            <span>{timeLeft.seconds}</span>
+            <span className="md:text-sm">Sec</span>
+          </span>
         </p>
       </div>
       <div className="absolute right-0 lg:right-10 bottom-72 md:bottom-0 md:top-80 z-20">
@@ -234,8 +348,7 @@ function Header() {
             </g>
           </g>
         </svg>
-      </div>      
-      
+      </div>
     </div>
   );
 }
