@@ -90,9 +90,9 @@ function Header() {
         <img src="./assets/Home/dualCloud.svg" alt="mobile_cloud" />
       </div>
 
-      <div className="w-full flex justify-center pt-52 lg:pt-0">
+      <div className="w-full flex justify-center pt-56 lg:pt-10">
         <img
-          src="./assets/Home/kstar.png"
+          src="./assets/Home/Logo.png"
           alt="Kstar_logo"
           className="w-9/12 lg:w-4/12 h-full"
         />
