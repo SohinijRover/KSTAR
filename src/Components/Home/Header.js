@@ -103,7 +103,7 @@ function Header() {
         </p>
 
         {/* TIMER */}
-        <p className="font-bold text-white text-2xl md:text-3xl mt-5 relative flex items-center justify-center gap-10 p-2">
+        <p className="font-bold text-white text-2xl md:text-3xl mt-5 relative flex items-center justify-center gap-10 sm:gap-5 p-2">
           <span className="relative w-20 h-20 flex flex-col justify-center items-center">
             <span
               className="border-2 rounded-xl absolute w-full h-full"
