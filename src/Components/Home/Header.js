@@ -47,43 +47,61 @@ function Header() {
   return (
     <div className="bg-gradient-to-b from-viodeep to-violight px-4 md:px-10 py-6 w-full h-screen fixed">
       <div className="w-full flex justify-between">
-        <div className="flex">
-          <a
-            href="https://kiit.ac.in/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-viodeep"
-          >
-            <img
-              src="./assets/Home/kiit.png"
-              alt="kiit"
-              className="w-10 h-8 md:w-16 md:h-12"
-            />
-          </a>
-          <a
-            href="https://ksac.kiit.ac.in/"
-            target="_blank"
-            rel="noreferrer"
-            className="ml-3 text-viodeep"
-          >
-            <img
-              src="./assets/Home/ksac.png"
-              alt="ksac"
-              className="w-10 h-9 md:w-16 md:h-14 md:ml-6 md:-mt-1"
-            />
-          </a>
+        <div className="flex justify-between w-full">
+          <div className="flex items-center">
+            <a
+              href="https://kiit.ac.in/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-viodeep"
+            >
+              <img
+                src="./assets/Home/kiit.png"
+                alt="kiit"
+                className="w-10 h-8 md:w-16 md:h-12"
+              />
+            </a>
+            <a
+              href="https://ksac.kiit.ac.in/"
+              target="_blank"
+              rel="noreferrer"
+              className="ml-3 text-viodeep"
+            >
+              <img
+                src="./assets/Home/ksac.png"
+                alt="ksac"
+                className="w-10 h-9 md:w-16 md:h-14 md:ml-6 md:-mt-1"
+              />
+            </a>
+          </div>
+          {/* rgba(42, 6, 69, 0)) rgba(42, 6, 69, 0)); bg-gradient-to-r from-viodeep to-violight */}
+          <div className="flex gap-5 items-center">
+            <a
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center text-viodeep font-bold text-xl p-3 rounded-full bg-white"
+            >
+              <span className="flex gap-2 items-center">Register Now
+              <img
+                src="./assets/Home/click.png"
+                alt="register"
+                className="w-5 h-5 md:w-5 md:h-5"
+              /></span>
+            </a>
+            <a
+              href="mailto:studentsupport@kiit.ac.in?subject=Enquiry - KSTAR"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="./assets/Home/chat.svg"
+                alt="chat"
+                className="w-7 h-7 md:w-10 md:h-10"
+              />
+            </a>
+          </div>
         </div>
-        <a
-          href="mailto:studentsupport@kiit.ac.in?subject=Enquiry - KSTAR"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="./assets/Home/chat.svg"
-            alt="chat"
-            className="w-7 h-7 md:w-10 md:h-10"
-          />
-        </a>
       </div>
 
       <div className="md:hidden w-screen absolute left-0 top-20">
