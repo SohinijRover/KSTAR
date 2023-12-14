@@ -110,7 +110,7 @@ function Hero() {
             id="challenge"
           />
         </div>
-        <div className="relative -bottom-96">
+        <div className="relative" style={{bottom: "-26rem"}}>
           <BgBench />
         </div>
         <CardInfo />
