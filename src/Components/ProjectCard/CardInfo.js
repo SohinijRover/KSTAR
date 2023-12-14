@@ -6,23 +6,17 @@ function CardInfo() {
     {
       id: 1,
       imageUrl: "./assets/Home/event/music.svg",
-      title: "Singing",
+      title: "Music",
       link: "/music",
     },
     {
       id: 2,
       imageUrl: "./assets/Home/event/dance.svg",
-      title: "Instrumental",
-      link: "/music",
-    },
-    {
-      id: 3,
-      imageUrl: "./assets/Home/event/dance.svg",
       title: "Dance",
       link: "/dance",
     },
     {
-      id: 4,
+      id: 3,
       imageUrl: "./assets/Home/event/draw.svg",
       title: "Painting",
       link: "/painting",
@@ -30,53 +24,41 @@ function CardInfo() {
   ]);
   const [b_two] = useState([
     {
-      id: 5,
+      id: 4,
       imageUrl: "./assets/Home/event/acting.svg",
       title: "Acting",
       link: "/acting",
     },
     {
-      id: 6,
+      id: 5,
       imageUrl: "./assets/Home/event/graphic.svg",
       title: "Design",
       link: "/design",
     },
     {
-      id: 7,
+      id: 6,
       imageUrl: "./assets/Home/event/photography.svg",
       title: "Snapshot",
       link: "/snapshot",
     },
+  ]);
+  const [b_three] = useState([
     {
-      id: 8,
+      id: 7,
       imageUrl: "./assets/Home/event/Fashion.svg",
       title: "Fashion",
       link: "/fashion",
     },
-  ]);
-  const [b_three] = useState([
     {
-      id: 9,
+      id: 8,
       imageUrl: "./assets/Home/event/video.svg",
       title: "Short Flim",
       link: "/flim",
     },
     {
-      id: 10,
+      id: 9,
       imageUrl: "./assets/Home/event/writing.svg",
       title: "Writing",
-      link: "/writing",
-    },
-    {
-      id: 11,
-      imageUrl: "./assets/Home/event/writing.svg",
-      title: "Short Story",
-      link: "/writing",
-    },
-    {
-      id: 12,
-      imageUrl: "./assets/Home/event/writing.svg",
-      title: "Poetry",
       link: "/writing",
     },
   ]);

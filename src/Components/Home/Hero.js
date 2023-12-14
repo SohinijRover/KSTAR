@@ -105,7 +105,7 @@ function Hero() {
         </Link>
       </div>
       <div
-        className="absolute lg:-bottom-52 z-10 h-full"
+        className="absolute lg:-bottom-52 -z-1 h-full"
         style={{ top: "-67vh" }}
       >
         <img src="./assets/Home/cloud.svg" alt="cloud_main" />
@@ -146,7 +146,7 @@ function Hero() {
           </span>
         </a>
       </div>
-      <div className="container mx-auto">
+      <div className="container mx-auto z-10">
         <div className="px-8 md:px-20 pt-10">
           <p className="text-white text-3xl sm:text-5xl font-extrabold pb-6">
             FAQ
