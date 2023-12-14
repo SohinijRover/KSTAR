@@ -133,10 +133,10 @@ function Hero() {
           href="#"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center text-viodeep font-bold text-xl p-3 rounded-full bg-white absolute left-1/2 bottom-5 z-50 hover:bg-gray-200"
+          className="flex items-center hover:text-black bg-gradient-to-r hover:from-white hover:to-white from-viodeep to-violight text-white font-bold text-xl py-4 px-7 rounded-full bg-white absolute left-1/2 bottom-5 z-50"
           style={{transform: "translateX(-50%)"}}
         >
-          <span className="flex gap-2 items-center">
+          <span className="flex gap-5 items-center">
             Register Now
             <img
               src="./assets/Home/click.png"
