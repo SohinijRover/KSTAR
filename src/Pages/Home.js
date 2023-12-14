@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="flex flex-col relative" style={{ height: `${height}px` }}>
       <Header />
-        <Hero />
+      <Hero />
     </div>
   );
 }

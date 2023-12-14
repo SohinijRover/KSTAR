@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import CardInfo from "../ProjectCard/CardInfo";
 import BgBench from "./BgBench";
 import BgBenchTwo from "./BgBenchTwo";
@@ -8,6 +8,13 @@ import Faqinit from "./ParticularCom/faqinit";
 import { Link } from "react-scroll";
 
 function Hero() {
+  const [registerHover, setRegisterHover] = useState(false);
+  const hoverRegisterOn = () => {
+    setRegisterHover(true);
+  };
+  const hoverRegisterOff = () => {
+    setRegisterHover(false);
+  };
   return (
     <div
       className="bg-gradient-to-b from-vioblend via-blue to-vioblend2 pb-10 z-0 absolute"
@@ -133,13 +140,19 @@ function Hero() {
           href="#"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center hover:text-black bg-gradient-to-r hover:from-white hover:to-white from-viodeep to-violight text-white font-bold text-2xl py-4 px-7 rounded-full bg-white absolute left-1/2 bottom-5 z-50"
-          style={{transform: "translateX(-50%)"}}
+          className="flex items-center hover:text-viodeep bg-gradient-to-r hover:from-white hover:to-white from-viodeep to-violight text-white font-bold text-2xl py-5 px-10 rounded-full bg-white absolute left-1/2 bottom-2 z-50"
+          style={{ transform: "translateX(-50%)" }}
+          onMouseEnter={hoverRegisterOn}
+          onMouseLeave={hoverRegisterOff}
         >
           <span className="flex gap-5 items-center">
             Register Now
             <img
-              src="./assets/Home/click.png"
+              src={
+                !registerHover
+                  ? "./assets/Home/click_white.png"
+                  : "./assets/Home/click.png"
+              }
               alt="register"
               className="w-7 h-7 md:w-7 md:h-7"
             />

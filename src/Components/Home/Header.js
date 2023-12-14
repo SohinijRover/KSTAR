@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 function Header() {
+  const [registerHover, setRegisterHover] = useState(false);
+  const hoverRegisterOn = () => {
+    setRegisterHover(true);
+  };
+  const hoverRegisterOff = () => {
+    setRegisterHover(false);
+  };
   const calculateTimeLeft = () => {
     const currentDate = new Date();
     const targetDate = new Date("December 25, 2023 00:00:00");
@@ -79,14 +86,22 @@ function Header() {
               href="#"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center text-viodeep font-bold text-xl p-3 rounded-full bg-white z-50 hover:bg-black hover:text-white"
+              className="flex items-center text-viodeep font-bold text-xl py-3 px-5 rounded-full bg-white z-50 hover:bg-black hover:text-white"
+              onMouseEnter={hoverRegisterOn}
+              onMouseLeave={hoverRegisterOff}
             >
-              <span className="flex gap-2 items-center">Register Now
-              <img
-                src="./assets/Home/click.png"
-                alt="register"
-                className="w-5 h-5 md:w-5 md:h-5"
-              /></span>
+              <span className="flex gap-2 items-center">
+                Register Now
+                <img
+                  src={
+                    registerHover
+                      ? "./assets/Home/click_white.png"
+                      : "./assets/Home/click.png"
+                  }
+                  alt="register"
+                  className="w-5 h-5 md:w-5 md:h-5"
+                />
+              </span>
             </a>
             <a
               href="mailto:studentsupport@kiit.ac.in?subject=Enquiry - KSTAR"
