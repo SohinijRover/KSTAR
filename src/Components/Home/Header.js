@@ -79,7 +79,7 @@ function Header() {
               href="#"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center text-viodeep font-bold text-xl p-3 rounded-full bg-white"
+              className="flex items-center text-viodeep font-bold text-xl p-3 rounded-full bg-white z-50 hover:bg-gray-200"
             >
               <span className="flex gap-2 items-center">Register Now
               <img

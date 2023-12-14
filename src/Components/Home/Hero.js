@@ -9,8 +9,14 @@ import { Link } from "react-scroll";
 
 function Hero() {
   return (
-    <div className="bg-gradient-to-b from-vioblend via-blue to-vioblend2 pb-10 z-0 absolute" style={{top: "110vh"}}>
-      <div className="hidden md:block md:mt-0 md:absolute left-8 w-full md:w-2/12 z-30" style={{top: "-37vh"}}>
+    <div
+      className="bg-gradient-to-b from-vioblend via-blue to-vioblend2 pb-10 z-0 absolute"
+      style={{ top: "110vh" }}
+    >
+      <div
+        className="hidden md:block md:mt-0 md:absolute left-8 w-full md:w-2/12 z-30"
+        style={{ top: "-37vh" }}
+      >
         <img
           src="./assets/Home/Prizetag.png"
           alt="Prize_Money"
@@ -98,7 +104,10 @@ function Hero() {
           </svg>
         </Link>
       </div>
-      <div className="absolute lg:-bottom-52 z-10 h-full" style={{top: "-67vh"}}>
+      <div
+        className="absolute lg:-bottom-52 z-10 h-full"
+        style={{ top: "-67vh" }}
+      >
         <img src="./assets/Home/cloud.svg" alt="cloud_main" />
       </div>
       <div className="container mx-auto">
@@ -110,7 +119,7 @@ function Hero() {
             id="challenge"
           />
         </div>
-        <div className="relative" style={{bottom: "-26rem"}}>
+        <div className="relative" style={{ bottom: "-26rem" }}>
           <BgBench />
         </div>
         <CardInfo />
@@ -118,8 +127,24 @@ function Hero() {
           <BgBenchTwo />
         </div>
       </div>
-      <div className="lg:mt-24">
+      <div className="lg:mt-24 relative">
         <img src="./assets/Home/dual_cloude.svg" alt="dual_cloude" />
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center text-viodeep font-bold text-xl p-3 rounded-full bg-white absolute left-1/2 bottom-5 z-50 hover:bg-gray-200"
+          style={{transform: "translateX(-50%)"}}
+        >
+          <span className="flex gap-2 items-center">
+            Register Now
+            <img
+              src="./assets/Home/click.png"
+              alt="register"
+              className="w-5 h-5 md:w-5 md:h-5"
+            />
+          </span>
+        </a>
       </div>
       <div className="container mx-auto">
         <div className="px-8 md:px-20 pt-10">
