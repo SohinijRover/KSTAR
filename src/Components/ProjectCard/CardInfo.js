@@ -68,7 +68,7 @@ function CardInfo() {
   ]);
   return (
     <div
-      className="overflow-hidden w-full flex flex-col justify-center items-center"
+      className="overflow w-full flex flex-col justify-center items-center mb-10"
       id="cards"
     >
       <div className="w-10/12 flex flex-wrap justify-center">
@@ -81,7 +81,7 @@ function CardInfo() {
           </div>
         ))}
       </div>
-      <div className="mb-10 w-10/12 flex flex-wrap justify-center">
+      <div className="w-10/12 flex flex-wrap justify-center">
         {b_last.map(({ id, ...otherprops }) => (
           <div
             key={id}

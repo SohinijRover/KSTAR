@@ -7,7 +7,9 @@ function CardStyle(props) {
     scroll.scrollToTop();
   };
   return (
-    <div className="flex w-11/12 flex-col justify-center mt-10 lg:mt-44 items-center">
+    <div className="flex w-11/12 flex-col justify-center mt-10 lg:mt-72 items-center" style={{
+      marginTop: "15rem"
+    }}>
       <Link
         to={props.link}
         onClick={toggleHome}
