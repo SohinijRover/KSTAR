@@ -133,7 +133,7 @@ function Hero() {
           href="#"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center hover:text-black bg-gradient-to-r hover:from-white hover:to-white from-viodeep to-violight text-white font-bold text-xl py-4 px-7 rounded-full bg-white absolute left-1/2 bottom-5 z-50"
+          className="flex items-center hover:text-black bg-gradient-to-r hover:from-white hover:to-white from-viodeep to-violight text-white font-bold text-2xl py-4 px-7 rounded-full bg-white absolute left-1/2 bottom-5 z-50"
           style={{transform: "translateX(-50%)"}}
         >
           <span className="flex gap-5 items-center">
@@ -141,7 +141,7 @@ function Hero() {
             <img
               src="./assets/Home/click.png"
               alt="register"
-              className="w-5 h-5 md:w-5 md:h-5"
+              className="w-7 h-7 md:w-7 md:h-7"
             />
           </span>
         </a>
