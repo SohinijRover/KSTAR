@@ -9,8 +9,8 @@ import { Link } from "react-scroll";
 
 function Hero() {
   return (
-    <div className="bg-gradient-to-b from-vioblend via-blue to-vioblend2 pb-10 z-0 absolute" style={{top: "100vh"}}>
-      <div className="hidden md:block md:mt-0 md:absolute left-8 w-full md:w-2/12 z-30" style={{top: "-26vh"}}>
+    <div className="bg-gradient-to-b from-vioblend via-blue to-vioblend2 pb-10 z-0 absolute" style={{top: "110vh"}}>
+      <div className="hidden md:block md:mt-0 md:absolute left-8 w-full md:w-2/12 z-30" style={{top: "-37vh"}}>
         <img
           src="./assets/Home/Prizetag.png"
           alt="Prize_Money"
@@ -24,7 +24,7 @@ function Hero() {
           className="w-3/12 md:w-9/12 h-full"
         />
       </div>
-      <div className="w-full justify-center hidden lg:flex absolute top-0 z-50">
+      <div className="w-full justify-center hidden lg:flex absolute -top-20 z-50">
         <Link
           to="challenge"
           smooth={true}

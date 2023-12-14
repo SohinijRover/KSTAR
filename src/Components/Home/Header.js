@@ -45,7 +45,7 @@ function Header() {
     return () => clearTimeout(timer);
   }, [timeLeft]);
   return (
-    <div className="bg-gradient-to-b from-viodeep to-violight px-4 md:px-10 py-6 w-full h-screen fixed">
+    <div className="bg-gradient-to-b from-viodeep to-violight px-4 md:px-10 py-4 w-full h-screen fixed">
       <div className="w-full flex justify-between">
         <div className="flex justify-between w-full">
           <div className="flex items-center">
@@ -74,7 +74,6 @@ function Header() {
               />
             </a>
           </div>
-          {/* rgba(42, 6, 69, 0)) rgba(42, 6, 69, 0)); bg-gradient-to-r from-viodeep to-violight */}
           <div className="flex gap-5 items-center">
             <a
               href="#"
