@@ -17,12 +17,10 @@ function Hero() {
   };
   return (
     <div
-      className="bg-gradient-to-b from-vioblend via-blue to-vioblend2 pb-10 z-0 absolute"
-      style={{ top: "110vh" }}
+      className="bg-gradient-to-b from-vioblend via-blue to-vioblend2 pb-10 z-0 absolute home-hero"
     >
       <div
         className="hidden md:block md:mt-0 md:absolute left-8 w-full md:w-2/12 z-30"
-        style={{ top: "-37vh" }}
       >
         <img
           src="./assets/Home/Prizetag.png"
@@ -30,7 +28,7 @@ function Hero() {
           className="w-3/12 md:w-9/12 h-full"
         />
       </div>
-      <div className="flex justify-center mt-4 md:hidden w-full z-30">
+      <div className="flex justify-center items-center mt-4 md:hidden w-11/12 z-30 absolute -top-40 -left-48">
         <img
           src="./assets/Home/PRIZE-STAMP.png"
           alt="Prize_Money"
@@ -74,7 +72,7 @@ function Hero() {
           </svg>
         </Link>
       </div>
-      <div className="w-full text-center text-white lg:mt-32 lg:hidden flex justify-center">
+      <div className="w-full text-center text-white lg:mt-32 lg:hidden flex justify-center absolute z-50 -top-24">
         <Link
           to="challenge"
           smooth={true}
@@ -112,8 +110,7 @@ function Hero() {
         </Link>
       </div>
       <div
-        className="absolute lg:-bottom-52 -z-1 h-full"
-        style={{ top: "-67vh" }}
+        className="absolute -z-1 h-full -top-60"
       >
         <img src="./assets/Home/cloud.svg" alt="cloud_main" />
       </div>

@@ -118,24 +118,20 @@ function Header() {
         </div>
       </div>
 
-      <div className="md:hidden w-screen absolute left-0 top-20">
-        <img src="./assets/Home/dualCloud.svg" alt="mobile_cloud" />
-      </div>
-
-      <div className="w-full flex justify-center pt-56 lg:pt-10">
+      <div className="w-full flex justify-center pt-20">
         <img
           src="./assets/Home/Logo.png"
           alt="Kstar_logo"
           className="w-9/12 lg:w-4/12 h-full"
         />
       </div>
-      <div className="w-full text-center mt-24 lg:mt-4">
+      <div className="w-full text-center mt-20">
         <p className="font-bold text-white text-2xl md:text-4xl">
           25th - 27th Dec, 2021
         </p>
 
         {/* TIMER */}
-        <p className="font-bold text-white text-2xl md:text-3xl mt-5 relative flex items-center justify-center gap-10 sm:gap-5 p-2">
+        <p className="font-bold text-white text-2xl md:text-3xl mt-10 relative flex items-center justify-center gap-5 sm:gap-5 p-2">
           <span className="relative w-20 h-20 flex flex-col justify-center items-center">
             <span
               className="border-2 rounded-xl absolute w-full h-full"
