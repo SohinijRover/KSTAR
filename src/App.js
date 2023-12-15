@@ -118,7 +118,7 @@ function App() {
             <Submit />{" "}
           </Route>
         </Switch>
-        <FooterTwo />
+        {loading ? "" : <FooterTwo />}
       </HashRouter>
     </div>
   );
