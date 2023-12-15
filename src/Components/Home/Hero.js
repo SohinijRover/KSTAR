@@ -20,7 +20,7 @@ function Hero() {
       className="bg-gradient-to-b from-vioblend via-blue to-vioblend2 pb-10 z-0 absolute home-hero"
     >
       <div
-        className="hidden md:block md:mt-0 md:absolute left-8 w-full md:w-2/12 z-30"
+        className="hidden md:block md:mt-0 md:absolute md:-top-28 lg:-top-40 2xl:-top-72 left-8 w-full md:w-2/12 z-30"
       >
         <img
           src="./assets/Home/Prizetag.png"
@@ -72,7 +72,7 @@ function Hero() {
           </svg>
         </Link>
       </div>
-      <div className="w-full text-center text-white lg:mt-32 lg:hidden flex justify-center absolute z-50 -top-24">
+      <div className="w-full text-center text-white lg:hidden flex justify-center absolute z-50 -top-24">
         <Link
           to="challenge"
           smooth={true}
@@ -110,12 +110,12 @@ function Hero() {
         </Link>
       </div>
       <div
-        className="absolute -z-1 h-full -top-60"
+        className="absolute -z-1 h-full -top-48 md:-top-60 lg:-top-96 2xl:top-60vh"
       >
         <img src="./assets/Home/cloud.svg" alt="cloud_main" />
       </div>
       <div className="container mx-auto">
-        <div className="w-full flex justify-center pt-20 lg:pt-52 lg:-mb-20">
+        <div className="w-full flex justify-center pt-20 lg:pt-52 lg:-mb-20 md:pt-10 xl:pt-80">
           <img
             src="./assets/Home/challenge.png"
             alt="72_hr_challenge"

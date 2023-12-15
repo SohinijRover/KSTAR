@@ -4,6 +4,9 @@
 
 @layer {
   .home-hero {
-    top: 100svh;
+    top: 100vh;
+  }
+  .clouds {
+    top: -60vh;
   }
 }

@@ -86,7 +86,7 @@ function Header() {
               href="#"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center text-viodeep font-bold text-xl py-3 px-5 rounded-full bg-white z-50 hover:bg-black hover:text-white"
+              className="flex items-center text-viodeep font-bold text-lg py-2 px-4 rounded-full bg-white z-50 hover:bg-black hover:text-white"
               onMouseEnter={hoverRegisterOn}
               onMouseLeave={hoverRegisterOff}
             >
@@ -118,20 +118,20 @@ function Header() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center pt-20">
+      <div className="w-full flex justify-center pt-20 2xl:pt-10">
         <img
           src="./assets/Home/Logo.png"
           alt="Kstar_logo"
           className="w-9/12 lg:w-4/12 h-full"
         />
       </div>
-      <div className="w-full text-center mt-20">
+      <div className="w-full text-center mt-20 md:mt-10 lg:mt-20 2xl:mt-10">
         <p className="font-bold text-white text-2xl md:text-4xl">
           25th - 27th Dec, 2021
         </p>
 
         {/* TIMER */}
-        <p className="font-bold text-white text-2xl md:text-3xl mt-10 relative flex items-center justify-center gap-5 sm:gap-5 p-2">
+        <p className="font-bold text-white text-2xl md:text-3xl mt-20 md:mt-14 2xl:mt-10 relative flex items-center justify-center gap-5 sm:gap-5 lg:gap-10 p-2">
           <span className="relative w-20 h-20 flex flex-col justify-center items-center">
             <span
               className="border-2 rounded-xl absolute w-full h-full"
